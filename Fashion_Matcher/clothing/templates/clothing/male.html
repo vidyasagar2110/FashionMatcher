@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male Fashion Matcher</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Form styling */
+        .form-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .form-container input {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #4CAF50;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Male Fashion Matcher</h1>
+    </header>
+
+    <!-- Form for inputting URLs -->
+    <div class="form-container">
+        <h2>Input Shirt and Pant URLs</h2>
+        <input type="url" placeholder="URL of Shirt" id="shirt-url" required>
+        <input type="url" placeholder="URL of Pant" id="pant-url" required>
+        <br>
+        <button id="generate-button">Generate</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Fashion Matcher. All rights reserved.
+    </footer>
+
+</body>
+</html>
